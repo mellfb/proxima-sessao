@@ -1,0 +1,64 @@
+body {
+    background-color: #ede7f6;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+header, #rouletteResult, #watchedHistory, #searchResults, #genreFilter, #favoritesList {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #d1c4e9;
+    border-radius: 8px;
+}
+
+input[type="text"], select, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #b3e5fc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #81d4fa;
+}
+
+#rouletteResult {
+    display: none;
+    animation: spin 0.5s ease-in-out forwards;
+    transform-origin: center;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+#coverImage {
+    width: 200px;
+    border-radius: 8px;
+}
+
+#searchResults img {
+    width: 100px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#favoritesList, #watchedHistory ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#favoritesList li {
+    margin: 5px;
+    padding: 5px;
+    background-color: #c5cae9;
+    border-radius: 4px;
+}

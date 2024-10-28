@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próxima Sessão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>Próxima Sessão</h1>
+        <input type="text" id="searchInput" placeholder="Buscar filme ou série...">
+        <button id="searchButton">Buscar</button>
+    </header>
+
+    <div id="searchResults"></div>
+    <div id="genreFilter">
+        <h2>Filtrar por Gênero</h2>
+        <select id="genreSelect">
+            <option value="minhas-escolhas">Minhas Escolhas</option>
+            <option value="">Todos os Gêneros</option>
+        </select>
+    </div>
+
+    <button id="spinButton">Girar Roleta</button>
+
+    <div id="rouletteResult">
+        <img id="coverImage" alt="Capa do Filme ou Série">
+        <div id="mediaInfo">
+            <h2 id="title"></h2>
+            <p id="overview"></p>
+            <p id="releaseDate"></p>
+            <button id="markWatched">Marcar como Assistido</button>
+        </div>
+    </div>
+
+    <section id="favoritesList">
+        <h2>Minhas Escolhas na Roleta</h2>
+        <ul id="favoritesDisplayList"></ul>
+    </section>
+
+    <section id="watchedHistory">
+        <h2>Histórico de Assistidos</h2>
+        <ul id="historyList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
